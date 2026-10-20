@@ -1,0 +1,18 @@
+
+{#
+/**
+ * @file
+ * Theme override for an item list of search results.
+ */
+#}
+
+{% extends "item-list.html.twig" %}
+
+{%
+  set classes = [
+    'search-results',
+    context.plugin ~ '-results',
+  ]
+%}
+
+{% set attributes = attributes.addClass(classes) %}

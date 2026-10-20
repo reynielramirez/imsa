@@ -1,0 +1,62 @@
+#faq-view details {
+    box-shadow: 0 0 4px 1px var(--primary) !important;
+    border-radius: 6px;
+    margin-bottom: 23px;
+}
+   
+#faq-view summary {
+    font-weight: 700;
+    font-size: 17.4px;
+}
+
+#faq-view .faq-description p {
+    margin: 0.8rem 0 0.2rem 0;
+}
+
+#faq-view .faq-item {
+    background: var(--theme-color-four);
+    padding: 12px 18px 12px 18px;
+    margin-bottom: 18px;
+}
+
+#faq-view .faq-item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#faq-view .faq-item-title::after {
+    content: '\02C7';
+    font-size: 21px;
+    line-height: 0;
+    font-family: 'Roboto-Regular';
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+#faq-view  .nire-accordion-item:hover {
+    background: #f57e2514;
+}
+
+#faq-view  .nire-accordion-item:hover .faq-item-title h6 {
+    color: var(--theme-color-one);
+}
+
+#faq-view  .nire-accordion-item.active {
+    background: #f57e2514;
+    border: 1px solid var(--theme-color-one);
+}
+
+#faq-view  .nire-accordion-item.active .faq-item-title h6 {
+    color: var(--theme-color-three);
+}
+
+#faq-view  .nire-accordion-item.active .faq-item-title::after {
+    content: '\02C6';
+}
+
+#faq-view .faq-item-content {
+
+}
+    

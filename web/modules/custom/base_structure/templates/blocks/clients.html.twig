@@ -1,0 +1,44 @@
+<!-- Block: Clients -->
+
+{% if data %}
+
+	<div id='clients-block' class="front-block" data-aos="fade-right">
+	
+		<h1 class="block-title"> {{ 'Customers'|t }} </h1>
+	    
+		<div class="block-content">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field-item">
+				<div id="clients-slider" class="services owl-carousel owl-theme owl-loaded owl-drag">
+
+					{% for i, item in data %}		
+					<!-- Clients -->
+
+						<div class="clients-item">
+							
+							{% if item.get('field_description').value %}
+
+								<button nire-dialog='{{ i }}'>
+									<img src={{ file_url(item.get('field_image').entity.uri.value) }} alt="client">
+								</button>
+								<h4 nire-dialog-title='{{ i }}'> {{ item.get('title').value }} </h4>
+								<p nire-dialog-content='{{ i }}'> {{ item.get('field_description').value }} </p>
+							
+							{% else %}	
+
+								<button>
+									<img src={{ file_url(item.get('field_image').entity.uri.value) }} alt="client">
+								</button>
+								
+							{% endif %}	
+
+						</div>
+	
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  
+{% endif %}	

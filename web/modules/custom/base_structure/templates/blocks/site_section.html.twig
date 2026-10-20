@@ -1,0 +1,21 @@
+
+{% if data %}
+<section class="local-section py-5">
+  <div class="container">
+    <h2 class="section-title">{{ data.title }}</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-text">
+        <div class="text-content">
+          {{ data.text|raw }}
+        </div>
+      </div>
+      <div class="col-image">
+        <img src="{{ file_url(data.image) }}" alt="{{ data.title }}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endif %}

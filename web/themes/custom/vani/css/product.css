@@ -1,0 +1,46 @@
+.product-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos modernos */
+.btn-cotiza {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #58b4ed;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(172, 184, 236, 0.4);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cotiza:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(172, 184, 236, 0.4);
+  gap: 16px;
+}
+
+.btn-cotiza:active {
+  transform: translateY(0);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-cotiza:hover .arrow-icon {
+  transform: translateY(5px);
+}
+
+/* Scroll suave para toda la página */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,3 @@
+base_structure.edit_static_content:
+  title: 'Edit Static Content'
+  restrict access: true

@@ -1,0 +1,41 @@
+<!-- View: Products Services -->
+
+{% if data %}
+
+	<div id='products-services-view' data-aos="fade-right">
+	
+	    {% if data.banner %}
+			<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}">
+	    {% endif %}	
+		
+		<h2 class="view-title"> {{ 'Products'|t }} </h2>
+		
+		<div class='products-items view-content container'>
+
+			<div class="views-view-grid horizontal cols-3 clearfix">
+				<div class="items">
+
+					
+
+				</div>
+			</div>
+
+		</div>
+
+		<h2 class="view-title"> {{ 'Services'|t }} </h2>
+		
+		<div class='services-items view-content container'>
+
+			<div class="views-view-grid horizontal cols-3 clearfix">
+				<div class="items">
+
+					
+
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+  
+{% endif %}	

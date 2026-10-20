@@ -1,0 +1,82 @@
+base_structure.home:
+  path: '/inicio'
+  defaults:
+    _title: 'Inicio'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getHome'
+  requirements:
+    _permission: 'access content'
+
+base_structure.about:
+  path: '/quienes-somos'
+  defaults:
+    _title: 'Quiénes Somos'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getAbout'
+  requirements:
+    _permission: 'access content'
+    
+base_structure.products:
+  path: '/productos'
+  defaults:
+    _title: 'Productos'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getProducts'
+  requirements:
+    _permission: 'access content'
+
+base_structure.services:
+  path: '/servicios'
+  defaults:
+    _title: 'Servicios'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getServices'
+  requirements:
+    _permission: 'access content'
+
+base_structure.news:
+  path: '/blog'
+  defaults:
+    _title: 'Blog'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getNews'
+  requirements:
+    _permission: 'access content'    
+    
+base_structure.faq:
+  path: '/faq'
+  defaults:
+    _title: 'Preguntas Frecuentes'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getFaq'
+  requirements:
+    _permission: 'access content'
+    
+base_structure.contact:
+  path: '/contacto'
+  defaults:
+    _title: 'Contacto'
+    _controller: '\Drupal\base_structure\Controller\BaseStructureController::getContact'
+  requirements:
+    _permission: 'access content'
+
+base_structure.page_404:
+  path: '/404'
+  defaults:
+    _title: 'Página no encontrada'
+    _controller: 'Drupal\base_structure\Controller\BaseStructureController::getPage404'
+  requirements:
+    _permission: 'access content'
+
+base_structure.page_403:
+  path: '/403'
+  defaults:
+    _title: 'Acceso Denegado'
+    _controller: 'Drupal\base_structure\Controller\BaseStructureController::getPage403' 
+  requirements:
+    _permission: 'access content'
+
+base_structure.static_content:
+  path: '/admin/content/static'
+  defaults:
+    _title: 'Contenidos Estáticos'
+    _form: '\Drupal\base_structure\Plugin\Form\StaticContentForm'
+  requirements:
+    _permission: 'base_structure.edit_static_content'
+  options:
+    _admin_route: true
+

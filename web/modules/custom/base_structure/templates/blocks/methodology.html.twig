@@ -1,0 +1,22 @@
+<!-- Block: Methodology -->
+
+{% if data.description and data.description is not empty %}
+
+	<div id='methodology-block' class="front-block views-element-container block">
+		<div class="container">
+
+			<div data-aos="fade-right">
+
+				<h2 class="block-title"> {{ 'IMPROVE Methodology'|t }} </h2>
+
+				<div class="block-content">
+
+					{{ data.description|raw }} 
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+  
+{% endif %}	

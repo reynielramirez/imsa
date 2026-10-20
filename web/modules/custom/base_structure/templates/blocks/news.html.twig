@@ -1,0 +1,65 @@
+<!-- Block: News -->
+
+{% if data %}
+
+<div id='news-block' class="front-block block" data-aos="fade-right">
+
+	<div class="main-wrapper container">
+
+		<h2 class="block-title"> {{ 'Our Latest Blog'|t }} </h2>
+
+		<div class="block-content">
+
+			<div class="views-view-grid horizontal cols-3 clearfix">
+				<div class="items">
+
+					<!-- News -->
+					{% for item in data %}	
+
+						{% set link = url('entity.node.canonical', {'node': item.id}) %}
+						
+						<div class="box">
+							<div class="views-field views-field-field-image">
+								<div class="field-content"> 
+									<a href="{{ link }}">
+										<img src={{ file_url(item.get('field_image').entity.uri.value) }} loading="lazy" width="800" height="350" alt="image" class="image-field">
+									</a>
+								</div>
+							</div>
+							<div class="views-field views-field-title">
+								<span class="field-content">
+									<a href="{{ link }}">
+										{{ item.get('title').value }}
+									</a>
+								</span>
+							</div>
+							<div>
+								<div>
+									<p> {{ item.get('field_summary').value }} </p>
+									<p>
+										<a class="view-details-btn" href="{{ url('entity.node.canonical', {'node': item.id}) }}">
+											{{ 'Read more'|t }}
+											<i class="fas fa-arrow-right"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					
+					{% endfor %}
+
+				</div>
+			</div>
+
+			<p class="read-more text-center">
+				<a href={{ path('base_structure.news') }} class="button"> 
+					{{ 'Visit Our Blog'|t }} 
+				</a>
+			</p>
+
+		</div>
+	</div>
+
+</div>
+
+{% endif %}

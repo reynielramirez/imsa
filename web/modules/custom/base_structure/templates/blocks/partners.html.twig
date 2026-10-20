@@ -1,0 +1,30 @@
+<!-- Block: Partners -->
+
+{% if data %}
+
+	<div id='partners-block' class="front-block" data-aos="fade-right">
+	
+		<h1 class="block-title"> {{ 'Partners'|t }} </h1>
+	    
+		<div class="block-content">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field-item">
+				<div id="partners-slider" class="services owl-carousel owl-theme owl-loaded owl-drag">
+
+					<!-- Partners -->
+					{% for item in data %}	
+
+						<div class="partners-item">
+							<a href="{{ item.get("field_link").uri }}" target="_blank">
+								<img src={{ file_url(item.get('field_image').entity.uri.value) }} alt="partner">
+							</a>
+						</div>
+
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+  
+{% endif %}	

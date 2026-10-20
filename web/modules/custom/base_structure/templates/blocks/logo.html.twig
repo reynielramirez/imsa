@@ -1,0 +1,12 @@
+
+{% if data %}
+
+    <div id="site-logo-block">
+
+        <a href="{{ path('base_structure.home') }}" rel="home" class="site-logo">
+            <img src="{{ file_url(data.logo) }}" alt="{{ 'Home'|t }}">
+        </a>
+
+    </div>
+
+{% endif %}	

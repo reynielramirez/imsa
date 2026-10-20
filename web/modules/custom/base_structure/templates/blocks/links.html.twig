@@ -1,0 +1,26 @@
+<!-- Block: Links -->
+
+{% if data %}
+
+<div id='links-block' class="footer-links-compact">
+  <div class="links-container">
+    <h2 class="block-title sites-interest">{{ 'Sites of interest'|t }}</h2>
+
+    <div class="block-content">
+      <div class="sites-list">
+        {% for link in data %}
+        {% if link.field_image.target_id %}
+        <a href='{{ link.get("field_link").uri }}' target='_blank' class="site-item">
+          <div class="site-item-with-image">
+            <img src="{{ file_url(link.get('field_image').entity.uri.value) }}" alt="{{ link.get('title').value }}" 
+                     class="site-thumb">
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}

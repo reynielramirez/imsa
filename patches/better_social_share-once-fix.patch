@@ -1,0 +1,15 @@
+diff --git a/better_social_share.libraries.yml b/better_social_share.libraries.yml
+index 123abc4...567def8 100644
+--- a/better_social_share.libraries.yml
++++ b/better_social_share.libraries.yml
+@@ -7,7 +7,7 @@ better_social_share:
+   js:
+     js/better_social_share.js: {}
+   dependencies:
+-    - core/jquery
+-    - core/drupal
+-    - core/drupalSettings
++    - core/jquery
++    - core/drupal
++    - core/drupalSettings
++    - core/once

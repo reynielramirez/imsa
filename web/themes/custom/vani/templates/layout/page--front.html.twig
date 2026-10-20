@@ -1,0 +1,24 @@
+
+{#
+/**
+ * @file
+ * Theme implementation to display front page.
+ */
+#}
+
+{% include '@vani/template-parts/header.html.twig' %}
+
+<div id="main-margin-top">
+</div>
+
+<div id="highlighted-front">
+  {% include '@vani/template-parts/highlighted.html.twig' %}
+</div>
+
+{% include '@vani/template-parts/content_home.html.twig' %}
+
+{% include '@vani/template-parts/footer.html.twig' %}
+
+{% if slider_show %}
+  {{ attach_library('atlas/slider') }}
+{% endif %}

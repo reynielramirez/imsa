@@ -1,0 +1,3 @@
+services:
+  base_structure_service:
+    class: Drupal\base_structure\Service\BaseStructureService

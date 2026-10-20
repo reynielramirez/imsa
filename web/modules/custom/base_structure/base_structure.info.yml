@@ -1,0 +1,5 @@
+name: 'Estructura Base'
+description: 'Módulo encargado de la estructuración base del sitio'
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+package: 'Custom'

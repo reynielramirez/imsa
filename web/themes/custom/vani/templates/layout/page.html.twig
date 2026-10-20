@@ -1,0 +1,37 @@
+
+{#
+/**
+ * @file
+ * Theme implementation to display a single page.
+ */
+#}
+
+{% include '@vani/template-parts/header.html.twig' %}
+
+<div id="main-margin-top">
+</div>
+
+<div id="highlighted-front">
+  {% include '@vani/template-parts/highlighted.html.twig' %}
+</div>
+
+<div id="main-wrapper" class="main-wrapper">
+  <div class="container clear">
+  <div class="main-container">
+    <main id="main" class="page-content">
+      <a id="main-content" tabindex="-1"></a>
+      <div class="node-content">
+        {{ page.content }}
+      </div>
+    </main>
+	
+	{% if front_sidebar %}
+      {% include '@vani/template-parts/sidebar_left.html.twig' %}
+      {% include '@vani/template-parts/sidebar_right.html.twig' %}
+    {% endif %}
+    
+  </div> 
+  </div> 
+</div>
+
+{% include '@vani/template-parts/footer.html.twig' %}

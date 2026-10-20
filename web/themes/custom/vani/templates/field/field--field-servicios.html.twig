@@ -1,0 +1,43 @@
+
+{#
+/**
+ * @file
+ * Theme override for  term fields.
+ */
+#}
+
+<div id='field-services-view' class="node-taxonomy-container">
+  <h3 class="view-title values-title">{{"Sub-Servicios"|t}}</h3>
+    <div class="separator"></div>
+		<div class='services-items view-content container'>
+
+			<div class="services-container">
+				<div class="items">
+          {% for item in items %}
+            {% set referenced_entity = item.content['#entity'] %}
+            {% if referenced_entity %}
+              <div class="product service">
+                <h3>
+                  {{ referenced_entity.get('title').value }}
+                </h3>
+                <div class="service-icon">
+                  <img src={{ file_url(referenced_entity.get('field_image').entity.uri.value) }} alt="service name">
+                </div>
+                <p class="summary">
+                  {{ referenced_entity.get('field_summary').value }}
+                </p>
+                <p>
+                  <a class="view-details-btn" href="{{ url('entity.node.canonical', {'node': referenced_entity.id}) }}">
+                    {{ 'Read more'|t }}
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </p> 
+              </div>
+            {% endif %}
+         {% endfor %}
+        </div>
+      </div>
+    </div>
+ 
+</div> <!--/.node-taxonomy-container -->
+{{ attach_library('vani/product-service') }}

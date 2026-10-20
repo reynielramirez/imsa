@@ -1,0 +1,83 @@
+<!-- View: News -->
+
+{% if data.items %}
+
+	<div id='faq-view' data-aos="fade-right">
+	
+    <!-- Banner Section -->
+		<section class="hero-banner position-relative">
+			{% if data.banner %}
+				<div class="banner-background">
+					<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}" class="w-100 h-100 object-fit-cover">
+				</div>
+			{% endif %}
+
+			<!-- Overlay for better text readability -->
+			<!-- <div class="banner-overlay position-absolute top-0 start-0 w-100 h-100"></div> -->
+			<!-- {% if data.text %} -->
+			<!-- Banner Content -->
+			<!-- <div class="banner-content position-relative z-3">
+				<div class="container">
+					<div class="row justify-content-center align-items-center min-vh-75">
+						<div class="col-lg-8 col-md-10 text-center text-white">
+								<h1 class="display-4 fw-bold mb-4">{{ 'Faq'|t }}</h1>
+								<p class="lead mb-0">{{ data.text|slice(0, 200) }}
+									{% if data.text|length > 200 %}...
+									{% endif %}
+								</p>
+						</div>
+					</div>
+				</div>
+			</div>
+      {% endif %} -->
+	  {% if data.text %}
+			<div class="pi-text">
+				<p>{{ data.text|slice(0, 200) }}</p>
+			</div>
+			{% endif %}
+		</section>
+		
+		<div class="separator"></div>
+		{#  <h2 class="view-title"> {{ 'FAQ'|t }} </h2> #}
+					<!-- {# Si quieres ver si hay resultado #}
+			<nav aria-label="Breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="/">{{ 'Home'|t }}</a>
+					</li>
+					{# <li class="breadcrumb-item">
+						<a href="/productos">
+							
+						</a>
+					</li> #}
+					<li class="breadcrumb-item active" aria-current="page">
+						{{ 'FAQ'|t }}
+					</li>
+				</ol>
+			</nav>
+			<div class="separator"></div> -->
+
+		<div class='faq-items view-content container'>
+			<div class="nire-accordion"> 
+
+				{% for item in data.items %}
+
+					<div class="faq-item nire-accordion-item"> 
+						<div class="faq-item-title nire-accordion-title">
+							<h6> {{ item.get('title').value }} </h6>
+						</div>
+						<div class="faq-item-content nire-accordion-content"> 
+							<p class="faq-description">
+								{{ item.get('field_rich_description').value|raw }}
+							</p>
+						</div>
+					</div>
+
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+  
+{% endif %}	

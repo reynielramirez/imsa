@@ -1,0 +1,26 @@
+#methodology-block {  
+    background: #2e6fbc29;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: unset;
+    padding: 25px;
+}
+
+#methodology-block .block-title {
+    color: var(--theme-color-one);
+}
+
+#methodology-block .block-title::before, 
+#methodology-block .block-title::after {
+    background: var(--dark-text-color);
+}
+
+#methodology-block p,
+#methodology-block td {  
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 11px -3px var(--secondary);
+}
+
+

@@ -1,0 +1,101 @@
+# Global stylings. These CSS files will be loaded on every pages.
+global-styling:
+  version: 1.0
+  css:
+    base:
+      css/style.css: {}
+      css/searcher.css: {}
+      css/feedback.css: {}
+      css/snowflakes.css: {}
+    layout:
+      css/responsive.css: {}
+  dependencies:
+    - vani/fontawesome-library
+
+# Global Javascripts. These will be loaded on every pages.
+global-scripts:
+  version: 1.0
+  js:
+    js/atlas.js: {}
+    js/feedback.js: {}
+    js/inject-instagram.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    #- vani/morphist-library
+
+# Slider
+slider:
+  version: 2.1.2
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+
+# Google Material Icons
+material:
+  version: 3.0.1
+  css:
+    component:
+      css/material.css: {}
+
+# Book
+book:
+  version: VERSION
+  css:
+    component:
+      css/book.css: {}
+
+# maintenance page
+maintenance:
+  version: 1.0
+  css:
+    theme:
+      css/maintenance.css: {}
+
+# Library: Morphist
+# -----------------------------------------------------------
+
+morphist-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/morphist-v2.1.2/css/morphist.css: {}
+  js:
+    /libraries/morphist-v2.1.2/js/morphist.js: {}
+  dependencies:
+    - core/jquery
+
+# Library: Fontawesome
+# -----------------------------------------------------------   
+fontawesome-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/fontawesome-free-6.5.2-web/css/all.min.css: {}
+
+gallery-modal:
+  version: VERSION
+  css:
+    theme:
+      css/gallery-modal.css: {}
+  js:
+    js/gallery-modal.js: {}
+
+product:
+  version: VERSION
+  css:
+    theme:
+      css/product.css: {}  
+
+service:
+  version: VERSION
+  css:
+    theme:
+      css/service.css: {} 
+
+product-service:
+  version: VERSION
+  css:
+    theme:
+      css/product-service.css: {}  

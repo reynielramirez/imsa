@@ -1,0 +1,85 @@
+#banner-block {
+    margin-bottom: 45px;
+    position: relative; /* Necesario para el posicionamiento absoluto del logo y slogan */
+}
+
+#banner-block .owl-nav {
+    display: none;
+}
+
+/* Asegura que las imágenes del slider sean responsivas */
+#banner-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === LOGO: esquina superior derecha === */
+.carousel-logo {
+    position: absolute;
+    top: 15px;      /* separación desde arriba */
+    right: 15px;    /* separación desde la derecha */
+    left: auto;     /* anula cualquier left heredado */
+    transform: none; /* anula el centrado */
+    z-index: 10;
+    text-align: right;
+    background: rgba(255,255,255,0.2);    /* fondo blanco translúcido */
+    padding: 8px 12px;                    /* espacio interno */
+    border-radius: 20px;                  /* borde redondeado */
+    backdrop-filter: blur(4px);           /* efecto de vidrio esmerilado (moderno) */
+}
+
+.carousel-logo img {
+    max-width: 250px !important;  /* tamaño más pequeño (ajústalo si quieres) */
+    height: auto;
+    display: block;   /* evita espacios extra */
+}
+
+/* === SLOGAN: centrado abajo (sin cambios) === */
+.carousel-slogan {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-slogan p {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .carousel-logo {
+        top: 10px;
+        right: 10px;
+    }
+    .carousel-logo img {
+        max-width: 60px;
+    }
+    
+    .carousel-slogan p {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-logo img {
+        max-width: 50px;
+    }
+    
+    .carousel-slogan p {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,196 @@
+logo-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/logo.css: {}
+      
+socials-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/socials.css: {}
+
+links-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/links.css: {}
+  
+banner-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/banner.css: {}
+  js:
+    assets/js/banner.js: {}
+  dependencies:
+    - base_structure/owl-carousel-library
+  
+about-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/about.css: {}
+  js:
+    assets/js/colaboradores.js: {}
+  dependencies:
+    - base_structure/owl-carousel-library
+
+testimonials-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/testimonials.css: {}
+  js:
+    assets/js/testimonials.js: {} 
+
+methodology-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/methodology.css: {}
+
+partners-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/partners.css: {}  
+  js:
+    assets/js/partners.js: {}
+  dependencies:
+    - base_structure/owl-carousel-library
+
+values-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/values.css: {}  
+  js:
+    assets/js/values.js: {}
+  dependencies:
+  - base_structure/owl-carousel-library
+
+clients-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/clients.css: {}  
+  js:
+    assets/js/clients.js: {}
+  dependencies:
+  - base_structure/owl-carousel-library
+  - base_structure/nire-dialog-library
+
+products-services-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/products_services.css: {}
+  js:
+    assets/js/products_services.js: {}
+  dependencies:
+    - base_structure/owl-carousel-library
+
+news-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/news.css: {}
+  js:
+    assets/js/news.js: {}     
+  
+map-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/map.css: {}
+  
+faq-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/faq.css: {}  
+  dependencies:
+    - base_structure/nire-accordion-library
+
+contacts-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/contacts.css: {}  
+
+error-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/error.css: {}
+
+site-section-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/site_section.css: {}
+
+subscribe-styling:
+  version: VERSION
+  css:
+    theme:
+      assets/css/subscribe.css: {}
+
+# Library: jquery
+# -----------------------------------------------------------
+
+jquery-library:
+  version: VERSION
+  js:
+     /libraries/jquery/js/jquery.min.js: {}
+     /libraries/jquery/js/jquery.mousewheel.min.js: {}
+
+# Library: owl-carousel
+# -----------------------------------------------------------
+
+owl-carousel-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/owl.carousel/css/owl.carousel.css: {}
+      /libraries/owl.carousel/css/owl.theme.default.css: {}
+  js:
+     /libraries/owl.carousel/js/owl.carousel.js: {}  
+  dependencies:
+    - base_structure/jquery-library
+
+# Library: nire-accordion
+# -----------------------------------------------------------
+
+nire-accordion-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/nire_accordion/css/nire_accordion.css: {}
+  js:
+     /libraries/nire_accordion/js/nire_accordion.js: {}
+  dependencies:
+    - base_structure/jquery-library
+
+# Library: AOS
+# -----------------------------------------------------------
+aos-library:
+  version: 2.3.1
+  css:
+    component:
+      /libraries/aos-v2.3.1/dist/aos.css: {}
+  js:
+    /libraries/aos-v2.3.1/dist/aos.js: {}
+  dependencies:
+    - base_structure/jquery-library
+
+# Library: Nire Dialog v2.0 
+# -----------------------------------------------------------
+nire-dialog-library:
+  version: VERSION
+  css:
+    theme:
+      /libraries/nire-dialog-v2.0/css/nire-dialog-v2.0.css: {}
+  js:
+     /libraries/nire-dialog-v2.0/js/nire-dialog-v2.0.js: {}

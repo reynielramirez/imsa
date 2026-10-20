@@ -1,0 +1,149 @@
+<!-- Página Detalle de producto -->
+<section class="product-detail-section">
+  <div class="container">
+    <div class="row">
+      <!-- Imagen-->
+      <div class="product-gallery">
+        <div class="product-main-image">
+          <div class="image-wrapper">
+            <img src="{{ file_url(node.get('field_image').entity.uri.value) }}" class="product-img"
+              alt="{{ node.get('field_image').alt }}">
+          </div>
+        </div>
+      </div>
+
+      <!-- Información del producto -->
+      <div class="product-info-wrapper">
+        <div class="product-info">
+          <h2 class="view-title values-title">{{ node.get('title').value }}</h2>
+
+          <!-- {# Breadcrumb #}
+          <div class="separator"></div>
+          {#  <h2 class="view-title"> {{ 'Products'|t }} </h2> #}
+          {# Si quieres ver si hay resultado #}
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/">{{ 'Home'|t }}</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="/productos">
+                  {{ 'Products'|t }}
+                </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                {{ node.get('title').value }}
+              </li>
+            </ol>
+          </nav>
+          <div class="separator"></div> -->
+          
+          <!-- <p class="product-description">
+            {{ node.get('field_summary').value }}
+          </p> -->
+
+          {{ content.better_social_share }}
+          <!-- Descripción extendida -->
+          {% if node.get('field_rich_description').value %}
+          <div class="details-section">
+            <!-- <h4 class="view-title values-title">{{ 'Detalles completos'|t }}</h4> -->
+            <div class="product-full-description">
+              {{ node.get('field_rich_description').value|raw }}
+            </div>
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+      <div style="text-align: center;">
+        <a href="/contacto#correo" class="btn-cotiza">
+          {{'Cotiza ahora'}}
+          <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    {# {% if content.field_productos is defined and content.field_productos|length > 0 %} #}
+      {{ content.field_productos }}
+    {# {% endif %} #}
+
+    <!-- Galería Grid Responsive -->
+    {% if node.field_gallery is defined and node.field_gallery|length > 0 %}
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <h4 class="view-title values-title">{{ 'Galería de imágenes'|t }}</h4>
+          <div class="gallery-grid">
+            {% for item in node.field_gallery %}
+              {% if item.entity.uri.value %}
+                <div class="gallery-item" data-index="{{ loop.index0 }}">
+                  <div class="gallery-card">
+                    <img src="{{ file_url(item.entity.uri.value) }}" 
+                        alt="{{ item.alt|default('Imagen del producto') }}" 
+                        class="gallery-thumb"
+                        data-full="{{ file_url(item.entity.uri.value) }}"
+                        data-alt="{{ item.alt|default('Imagen del producto') }}"
+                        loading="lazy">
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Carrusel (CSS puro) -->
+      <div id="imageModal" class="modal-carousel" aria-hidden="true">
+        <div class="modal-carousel-overlay"></div>
+        <div class="modal-carousel-container">
+          <div class="modal-carousel-content">
+            <div class="modal-carousel-header">
+              <button type="button" class="modal-carousel-close" aria-label="Close">&times;</button>
+            </div>
+            
+            <div class="carousel-container">
+              <button class="carousel-nav carousel-prev" aria-label="Anterior">&#10094;</button>
+              
+              <div class="carousel-slides-container">
+                <div class="carousel-slides">
+                  {% for item in node.field_gallery %}
+                    {% if item.entity.uri.value %}
+                      <div class="carousel-slide">
+                        <img src="{{ file_url(item.entity.uri.value) }}" 
+                            alt="{{ item.alt|default('Imagen del servicio') }}" 
+                            class="carousel-image">
+                        <div class="carousel-caption">
+                          {# <p>{{ item.alt|default('Imagen del servicio') }}</p> #}
+                          <div class="carousel-counter">
+                            <span class="current-slide">{{ loop.index }}</span> / 
+                            <span class="total-slides">{{ node.field_gallery|length }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+              
+              <button class="carousel-nav carousel-next" aria-label="Siguiente">&#10095;</button>
+            </div>
+            
+            <!-- Indicadores de navegación -->
+            <div class="carousel-indicators">
+              {% for item in node.field_gallery %}
+                {% if item.entity.uri.value %}
+                  <button class="indicator-dot" data-slide="{{ loop.index0 }}"></button>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+  </div>
+</section>
+{{ attach_library('vani/product') }}
+{{ attach_library('vani/gallery-modal') }}
+
+
+
+

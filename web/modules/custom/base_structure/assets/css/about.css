@@ -1,0 +1,66 @@
+#about-view .svg-icon {
+    height: 50px;
+    width: auto;
+}
+
+#about-view .about-description {
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+/*#about-view .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    grid-gap: 1rem;
+    gap: 1rem;
+}*/
+
+#about-view .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#about-view .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 32%;
+}
+
+#about-view .item:hover {
+    background: #f57e2514;
+    border: 1px solid var(--theme-color-one);
+}
+
+#about-view h3 {
+    padding-bottom: 5px;
+}
+
+#about-view .item {
+    background: var(--theme-color-four);
+    padding: 31px !important;
+}
+
+#about-view .item h3 {
+    color: black;
+}
+
+#about-view .svg-icon {
+    filter: brightness(0.9) saturate(2) hue-rotate(198deg) invert(15%) sepia(80%) saturate(1500%);
+}
+
+#about-view .values-title {
+    margin-top: 35px
+}
+
+.carrusel-colaborador-img {
+  width: 200px !important;        /* o el tamaño que necesites */
+  height: 200px !important;
+  object-fit: cover;
+  border-radius: 50%;  /* si quieres círculo */
+}
+
+.owl-theme .owl-nav {
+  display: none;
+}

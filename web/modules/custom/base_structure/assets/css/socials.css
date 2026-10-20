@@ -1,0 +1,35 @@
+#socials-block .social-icons {
+    position: absolute;
+    top: 212px;
+    right: 45px;
+    z-index: 1;
+    background: white;
+    padding: 3px;
+    height: 43px;
+    border-radius: 31px;
+}
+
+#socials-block .social-icons {
+    
+}
+
+#socials-block .social-icons li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#socials-block .social-icons li:hover {
+    border: 1px solid var(--footer-color);
+}
+
+#socials-block .social-icons li a {
+    border: unset;
+}
+

@@ -1,0 +1,4 @@
+base_structure.static_content.collection:
+  title: 'Static Content'
+  route_name: base_structure.static_content
+  base_route: system.admin_content

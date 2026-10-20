@@ -1,0 +1,39 @@
+<!-- Block: Values -->
+
+{% if data %}
+
+	<div id='values-block' class="front-block views-element-container block">
+		<div class="container">
+
+			<div data-aos="fade-right">
+
+				<h2 class="block-title"> {{ 'Values'|t }} </h2>
+
+				<div class="block-content">
+
+					<div class="field field--name-body field--type-text-with-summary field--label-hidden field-item">
+						<div id="values-slider" class="services owl-carousel owl-theme owl-loaded owl-drag">
+
+							<!-- Values -->
+							{% for item in data %}	
+
+								<div class="item">
+									<div class="about-icon">
+										<img class="svg-icon" src={{ file_url(item.get('field_image').entity.uri.value) }}>
+									</div>
+									<h3> {{ item.get('title').value }} </h3>	
+								</div>
+
+							{% endfor %}
+
+						</div>
+	
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+  
+{% endif %}	

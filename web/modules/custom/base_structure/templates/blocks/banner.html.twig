@@ -1,0 +1,27 @@
+<!-- Block: Banner -->
+
+{% if data %}
+{% set has_logo = site_logo is not empty %}
+
+<div id='banner-block'>
+
+    <div id="banner-slider" class="owl-carousel owl-theme">
+        {% for item in data %}
+            <img src="{{ file_url(item.get('field_image').entity.uri.value) }}" alt="banner">
+        {% endfor %}
+    </div>
+
+    <!-- Logo y slogan FUERA del slider -->
+    {% if has_logo %}
+        <div class="carousel-logo">
+            <img src="{{ file_url(site_logo) }}" alt="Logo">
+        </div>
+    {% endif %}
+
+    <div class="carousel-slogan">
+        <p>{{ slogan }}</p>
+    </div>
+
+</div>
+
+{% endif %}

@@ -1,0 +1,8 @@
+
+{# --- Block: Map --- #}
+
+	<!-- Block: Map --> 
+    <div id="map"> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.4005164487935!2d-82.40109337261957!3d23.111658600000133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88cd770045c230b5%3A0x7024bd5e4b62b2be!2sMultiSoft!5e0!3m2!1ses-419!2scu!4v1752724847644!5m2!1ses-419!2scu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	

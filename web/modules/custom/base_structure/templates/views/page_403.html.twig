@@ -1,0 +1,25 @@
+
+<!-- View: Page 403 -->
+
+{% if data %}
+
+	<div id="error-view" class="container error-page" data-aos="fade-right">
+		<div class="error-container row margin-top-40 margin-bottom-60">
+			<div class="col-md-12 number">
+				<h2 class="view-title"> {{ '403' }} </h2>
+			</div>
+			<div class=" col-md-12 details">
+				<h3> Acceso Denegado </h3>
+				<p>
+					El recurso solicitado requiere autenticación. 
+					<br>
+					<a href="{{ data.base_path }}es/user/login">Inicie sesión</a> 
+					o regrese a la 
+					<a href="{{ base_path }}es">Página de inicio</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+{% endif %}	
+

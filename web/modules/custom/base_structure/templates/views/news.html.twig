@@ -1,0 +1,114 @@
+<!-- View: News -->
+
+{% if data.items %}
+
+	<div
+		id='news-view' data-aos="fade-right">
+		<!-- Banner Section -->
+		<section class="hero-banner position-relative">
+			{% if data.banner %}
+				<div class="banner-background">
+					<img src="{{ file_url(data.banner) }}" alt="{{ 'Banner'|t }}" class="w-100 h-100 object-fit-cover">
+				</div>
+			{% endif %}
+
+			<!-- Overlay for better text readability -->
+			<!-- <div class="banner-overlay position-absolute top-0 start-0 w-100 h-100"></div> -->
+			<!-- {% if data.text %} -->
+			<!-- Banner Content -->
+			<!-- <div class="banner-content position-relative z-3">
+							<div class="container">
+								<div class="row justify-content-center align-items-center min-vh-75">
+									<div class="col-lg-8 col-md-10 text-center text-white">
+											<h1 class="display-4 fw-bold mb-4">{{ 'Blogs'|t }}</h1>
+											<p class="lead mb-0">{{ data.text|slice(0, 200) }}
+												{% if data.text|length > 200 %}...
+												{% endif %}
+											</p>
+									</div>
+								</div>
+							</div>
+						</div>
+			      {% endif %} -->
+				{% if data.text %}
+					<div class="pi-text"> <p>{{ data.text|slice(0, 200) }}</p>
+				</div>
+			{% endif %}
+		</section>
+
+		<div class="separator"></div>
+		{#  <h2 class="view-title"> {{ 'Our Blog'|t }} </h2> #}
+							<!-- {# Si quieres ver si hay resultado #}
+			<nav aria-label="Breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="/">{{ 'Home'|t }}</a>
+					</li>
+					{# <li class="breadcrumb-item">
+						<a href="/productos">
+							
+						</a>
+					</li> #}
+					<li class="breadcrumb-item active" aria-current="page">
+						{{ 'Our Blog'|t }}
+					</li>
+				</ol>
+			</nav>
+			<div class="separator"></div> -->
+
+		<div class='news-items view-content container'>
+
+			<div class="views-view-grid horizontal cols-3 clearfix">
+				<div
+					class="items">
+
+					<!-- News -->
+					{% for item in data.items %}
+
+						{% set link = url('entity.node.canonical', {'node': item.id}) %}
+
+						<div class="box">
+							<div class="views-field views-field-field-image">
+								<div class="field-content">
+									<a href="{{ link }}">
+										<img src={{ file_url(item.get('field_image').entity.uri.value) }} loading="lazy" width="800" height="350" alt="image" class="image-field">
+									</a>
+								</div>
+							</div>
+							<div class="views-field views-field-title">
+								<span class="field-content">
+									<a href="{{ link }}">
+										{{ item.get('title').value }}
+									</a>
+								</span>
+							</div>
+							<div>
+								<div>
+									<p>
+										{{ item.get('field_summary').value }}
+									</p>
+									<p>
+										<a class="view-details-btn" href="{{ url('entity.node.canonical', {'node': item.id}) }}">
+											{{ 'Read more'|t }}
+											<i class="fas fa-arrow-right"></i>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					{% endfor %}
+
+				</div>
+				<div class="separator"></div>
+				<div style="text-align: center;">
+					<a href="#newsletter" class="btn-suscribirse">
+						{{'Suscríbete para recibir más noticias'}}
+						<i class="fas fa-arrow-down"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endif %}

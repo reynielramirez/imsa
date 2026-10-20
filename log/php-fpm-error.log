@@ -1,0 +1,346 @@
+[12-Aug-2025 20:27:12 UTC] Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'multisoft'@'localhost' (using password: YES) in /var/www/html/multisoft/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php on line 168 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#1 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#2 [internal function]: Drupal\Core\Database\Database::getConnection()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[12-Aug-2025 20:27:16 UTC] Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'multisoft'@'localhost' (using password: YES) in /var/www/html/multisoft/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php on line 168 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#1 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#2 [internal function]: Drupal\Core\Database\Database::getConnection()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[12-Aug-2025 20:27:54 UTC] Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'multisoft'@'localhost' (using password: YES) in /var/www/html/multisoft/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php on line 168 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#1 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#2 [internal function]: Drupal\Core\Database\Database::getConnection()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[12-Aug-2025 20:27:56 UTC] Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'multisoft'@'localhost' (using password: YES) in /var/www/html/multisoft/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php on line 168 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#1 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#2 [internal function]: Drupal\Core\Database\Database::getConnection()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[12-Aug-2025 20:27:57 UTC] Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'multisoft'@'localhost' (using password: YES) in /var/www/html/multisoft/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php on line 168 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#1 /var/www/html/multisoft/web/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#2 [internal function]: Drupal\Core\Database\Database::getConnection()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#13 {main}
+[12-Aug-2025 16:29:29 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:29 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:30 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[12-Aug-2025 16:29:31 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[13-Aug-2025 08:56:03 America/Havana] Symfony\Component\Process\Exception\LogicException: The Process class relies on proc_open, which is not available on your PHP installation. in /var/www/html/multisoft/vendor/symfony/process/Process.php on line 149 #0 /var/www/html/multisoft/vendor/symfony/process/Process.php(194): Symfony\Component\Process\Process->__construct()
+#1 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CommandExecutor.php(58): Symfony\Component\Process\Process::fromShellCommandline()
+#2 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(74): Drupal\automatic_updates\CommandExecutor->create()
+#3 /var/www/html/multisoft/web/modules/contrib/automatic_updates/src/CronUpdateRunner.php(121): Drupal\automatic_updates\CronUpdateRunner->runTerminalUpdateCommand()
+#4 /var/www/html/multisoft/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\automatic_updates\CronUpdateRunner->run()
+#5 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(246): Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#6 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#7 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#8 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(114): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(683): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#11 /var/www/html/multisoft/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#12 {main}
+[15-Aug-2025 22:53:05 America/Havana] Uncaught PHP Exception Error: "Call to undefined function fileowner()" at /var/www/html/multisoft/web/core/modules/update/update.manager.inc line 302
+[15-Aug-2025 23:03:28 America/Havana] Uncaught PHP Exception Error: "Call to undefined function \klaro_update_status_alter()" at /var/www/html/multisoft/web/core/lib/Drupal/Core/Extension/ModuleHandler.php line 459
+[22-Sep-2025 15:47:16 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field layout_builder__layout is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 15:58:56 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 16:00:35 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 16:01:03 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 16:04:14 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 16:36:09 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 16:56:00 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 17:00:32 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[22-Sep-2025 20:26:25 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 09:16:30 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 09:17:22 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 09:42:49 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 09:43:09 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 10:08:46 America/Havana] Uncaught PHP Exception InvalidArgumentException: "Field field_description is unknown." at /var/www/html/multisoft/web/core/lib/Drupal/Core/Entity/ContentEntityBase.php line 616
+[23-Sep-2025 10:09:08 America/Havana] Uncaught PHP Exception Twig\Error\LoaderError: "Template "themes/custom/vani/templates/layout/html.html.twig" is not defined." at /var/www/html/multisoft/vendor/twig/twig/src/Loader/ChainLoader.php line 111
+[23-Sep-2025 18:18:03 UTC] Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException: You have requested a non-existent service "cache.backend.null". Did you mean one of these: "cache.backend.apcu", "cache.backend.memory", "cache.backend.php"? in /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php on line 157 #0 /var/www/html/multisoft/web/core/lib/Drupal/Core/Cache/CacheFactory.php(110): Drupal\Component\DependencyInjection\Container->get()
+#1 [internal function]: Drupal\Core\Cache\CacheFactory->get()
+#2 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(255): call_user_func_array()
+#3 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\Container->createService()
+#4 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(430): Drupal\Component\DependencyInjection\Container->get()
+#5 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(273): Drupal\Component\DependencyInjection\Container->resolveServicesAndParameters()
+#6 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\Container->createService()
+#7 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(430): Drupal\Component\DependencyInjection\Container->get()
+#8 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(237): Drupal\Component\DependencyInjection\Container->resolveServicesAndParameters()
+#9 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\Container->createService()
+#10 /var/www/html/multisoft/web/core/lib/Drupal/Component/DependencyInjection/Container.php(454): Drupal\Component\DependencyInjection\Container->get()
+#11 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(243): Drupal\Component\DependencyInjection\Container->Drupal\Component\DependencyInjection\{closure}()
+#12 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(206): Symfony\Component\EventDispatcher\EventDispatcher::Symfony\Component\EventDispatcher\{closure}()
+#13 /var/www/html/multisoft/vendor/symfony/event-dispatcher/EventDispatcher.php(56): Symfony\Component\EventDispatcher\EventDispatcher->callListeners()
+#14 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(241): Symfony\Component\EventDispatcher\EventDispatcher->dispatch()
+#15 /var/www/html/multisoft/vendor/symfony/http-kernel/HttpKernel.php(91): Symfony\Component\HttpKernel\HttpKernel->handleThrowable()
+#16 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/Session.php(53): Symfony\Component\HttpKernel\HttpKernel->handle()
+#17 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#18 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/ContentLength.php(28): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#19 /var/www/html/multisoft/web/core/modules/big_pipe/src/StackMiddleware/ContentLength.php(32): Drupal\Core\StackMiddleware\ContentLength->handle()
+#20 /var/www/html/multisoft/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(201): Drupal\big_pipe\StackMiddleware\ContentLength->handle()
+#21 /var/www/html/multisoft/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(138): Drupal\page_cache\StackMiddleware\PageCache->fetch()
+#22 /var/www/html/multisoft/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(87): Drupal\page_cache\StackMiddleware\PageCache->lookup()
+#23 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\page_cache\StackMiddleware\PageCache->handle()
+#24 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#25 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/AjaxPageState.php(36): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#26 /var/www/html/multisoft/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\AjaxPageState->handle()
+#27 /var/www/html/multisoft/web/core/lib/Drupal/Core/DrupalKernel.php(709): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#28 /var/www/html/multisoft/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#29 {main}
+[24-Sep-2025 14:59:10 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 14:59:10 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:11:56 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:11:56 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:14:40 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:14:41 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:30:16 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:30:16 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:35:56 America/Havana] Uncaught PHP Exception ParseError: "syntax error, unexpected token ","" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 122
+[24-Sep-2025 15:36:48 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:36:48 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:39:16 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 15:39:16 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 16:44:17 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 16:44:18 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 16:51:40 America/Havana] Uncaught PHP Exception TypeError: "Cannot access offset of type string on string" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 162
+[24-Sep-2025 16:54:32 America/Havana] Uncaught PHP Exception TypeError: "Cannot access offset of type string on string" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 163
+[24-Sep-2025 16:57:00 America/Havana] Uncaught PHP Exception TypeError: "Cannot access offset of type string on string" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 162
+[24-Sep-2025 17:16:37 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:16:37 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:18:22 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:18:22 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:20:14 America/Havana] Raul Batista
+[24-Sep-2025 17:20:14 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:20:14 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:21:38 America/Havana] Raul Batista
+[24-Sep-2025 17:21:38 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:21:38 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:24:11 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:24:11 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:26:17 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 17:26:17 America/Havana] === ENVIO EL CORREO POR DEFECTO ===
+[24-Sep-2025 23:20:39 America/Havana] Uncaught PHP Exception ParseError: "syntax error, unexpected token "="" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 159
+[24-Sep-2025 23:21:26 America/Havana] Uncaught PHP Exception Error: "Class "Drupal\base_structure\Plugin\Form\ContactForm" not found" at /var/www/html/multisoft/web/modules/custom/base_structure/src/Plugin/Form/FeedbackForm.php line 153

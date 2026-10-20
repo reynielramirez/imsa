@@ -1,0 +1,23 @@
+
+<!-- View: Page 404 -->
+
+{% if data %}
+
+    <div id="error-view" class="container" data-aos="fade-right">
+        <div class="error-container row margin-top-40 margin-bottom-60">
+            <div class="col-md-12 number">
+                <h2 class="view-title"> {{ '404' }} </h2>
+            </div>
+            <div class=" col-md-12 details">
+                <h3> Página no encontrada :( </h3>
+                <p>
+                    Lo sentimos, la página que intenta ver no existe. 
+                    <br>
+                    Por favor verifique la URL o regrese a la
+                    <a href="{{ data.base_path }}es"> Página de inicio </a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endif %}

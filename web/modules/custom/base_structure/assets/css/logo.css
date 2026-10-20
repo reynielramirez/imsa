@@ -1,0 +1,8 @@
+#site-logo-block {
+	display: flex;
+    align-items: center;
+}
+
+#site-logo-block img {
+    max-height: 35px;
+}

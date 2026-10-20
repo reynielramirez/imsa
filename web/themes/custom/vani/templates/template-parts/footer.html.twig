@@ -1,0 +1,86 @@
+
+<footer id="contacto" class="footer clear">
+
+  {% if page.footer_first and page.footer_second %}
+  
+    <div class="footer-container">
+  
+		<section class="clear footer-section">
+		 
+			  {% if page.footer_first %}
+				{{ page.footer_first }}
+			  {% endif %}
+		  
+		</section> <!--/footer-blocks -->
+		
+		<section class="clear footer-section">
+		 
+			  {% if page.footer_second %}
+				{{ page.footer_second }}
+			  {% endif %}
+		 
+		</section> <!--/footer-blocks -->
+	
+	</div>
+	
+  {% endif %} {# end if for footer one, two blocks #}
+
+  {% if page.footer_third %}
+  
+    <div class="footer-container-full">
+  
+		<section class="clear footer-section-full">
+		 
+			  {% if page.footer_third %}
+				{{ page.footer_third }}
+			  {% endif %}
+		  
+		</section> <!--/footer-blocks -->
+				
+	</div>
+	
+  {% endif %} {# end if for footer three #}
+
+
+  {% if page.footer_fourth %}
+  
+    <div class="footer-container-full">
+  
+		<section class="clear footer-section-full">
+		
+			  {% if page.footer_fourth %}
+				{{ page.footer_fourth }}
+			  {% endif %}
+		 
+		</section> <!--/footer-blocks -->
+	
+	</div>
+	
+  {% endif %} {# end if for four blocks #}
+  
+   <section id="footer-bottom-last" class="clear">
+	 <div class="container clear">
+		 <div class="footer-bottom-last">  
+		   <div class="copyright">
+			&copy; {{ "now"|date("Y") }} {{ 'Magnus TI S.A. de C.V.' }} {{ 'Developed by MultiSoft.'|t}} {{'All rights reserved.'|t}}
+		   </div>
+		 </div> <!-- /.container -->
+	 </div> <!-- /.container -->
+   </section> <!-- /footer-bottom-last -->
+
+</footer>		
+		
+{% if scrolltotop_on %}
+
+  <div title="Ir arriba" class="scrolltop"><div class="scrolltop-icon">&#x2191;</div></div>
+
+{% endif %}
+
+<!-- End: Footer -->
+
+{% if font_icon_fontawesome %}
+{{ attach_library('atlas/fontawesome') }}
+{% endif %}
+{% if font_icon_material %}
+{{ attach_library('atlas/material') }}
+{% endif %}

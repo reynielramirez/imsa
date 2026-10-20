@@ -1,0 +1,123 @@
+.snowflake {
+	position: absolute;
+}
+
+.snowflake-big-left {
+    top: 5%;
+    left: calc(((100vw - 1110px) / -4) - 40px);
+}
+
+.snowflake-small-left {
+    top: 3.5%;
+    left: calc(((100vw - 1110px) / -4) + 110px);
+}
+
+.snowflake-big-right {
+    margin-top: -103px;
+    right: calc(((100vw - 1110px) / -4) - 40px);
+}
+
+@media (max-width: 1350px) {
+	
+	.snowflake-big-left {
+		top: 2%;
+	}
+	
+	.snowflake-small-left {
+		top: 2%;
+	}
+	
+	.snowflake-big-right {
+		margin-top: -87px;
+	}
+	
+}
+
+@media (max-width: 1169px) {
+	
+	.snowflake-big-left {
+		left: calc(((100vw - 915px) / -4) - 40px);
+	}
+	
+	.snowflake-small-left {
+		left: calc(((100vw - 915px) / -4) + 110px);
+	}
+	
+	.snowflake-big-right {
+		right: calc(((100vw - 915px) / -4) - 39px);
+	}
+
+}
+
+@media (max-width: 991px) {
+	
+	.snowflake-big-left {
+		left: calc(((100vw - 720px) / -4) - 95px);
+	}
+	
+	.snowflake-small-left {
+		left: calc(((100vw - 720px) / -4) + 52px);
+	}
+	
+	.snowflake-big-right {
+		margin-top: -104px;
+		right: calc(((100vw - 720px) / -4) - 92px);
+	}
+  
+}
+
+@media (max-width: 767px) {
+	
+	.snowflake-big-left {
+		left: calc(((100vw - 455px) / -4) - 60px);
+	}
+	
+	.snowflake-small-left {
+		top: 0.6%;
+		left: calc(((100vw - 455px) / -4) + 70px);
+	}
+	
+	.snowflake-big-right {
+		margin-top: -124px;
+		right: calc(((100vw - 445px) / -4) - 55px);
+	}
+
+}
+
+@media (max-width: 713px) {
+
+    .snowflake-big-left {
+		left: calc(((100vw - 455px) / -4) - 140px);
+	}
+	
+	.snowflake-small-left {
+		left: calc(((100vw - 455px) / -4) - 10px);
+	}
+	
+	.snowflake-big-right {
+		right: calc(((100vw - 445px) / -4) - 132px);
+	}
+
+}
+
+@media (max-width: 474px) {
+	.snowflake-big-left {
+		display: none;
+	}
+	
+	.snowflake-small-left {
+		display: none;
+	}
+	
+	.snowflake-big-right {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+

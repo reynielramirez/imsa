@@ -1,0 +1,34 @@
+<header class="header clear">
+  <div class="container">
+    <div class="header-main">
+      {% if page.site_branding %}
+        <div class="site-brand">
+          {{ page.site_branding }}
+        </div> <!--/.site-branding -->
+      {% endif %}
+      {% if page.primary_menu or page.search_box %}
+        <div class="header-main-right">
+          {% if page.primary_menu %}
+            <div class="mobile-menu"><i class="icon-menu"></i></div> {# mobile-menu #}
+            <div class="primary-menu-wrapper">
+              <div class="menu-wrap">
+                <div class="close-mobile-menu">x</div>
+                {{ page.primary_menu }}
+              </div> <!-- /.menu-wrap -->
+            </div> <!-- /.primary-menu-wrapper -->
+          {% endif %}
+          {% if page.search_box %}
+            {% include '@vani/template-parts/search.html.twig' %}
+          {% endif %}
+        </div> <!-- /.header-right -->
+      {% endif %}
+    </div><!-- /header-main -->
+  </div><!-- /container -->
+  {% if is_front and slider_show %}
+    <div class="slider-show">
+      {{ page.slider_show }}
+    </div> <!--/.slider-show -->
+  {% elseif not is_front %}
+    {% include '@vani/template-parts/page_header.html.twig' %}
+  {% endif %}
+</header>

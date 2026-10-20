@@ -1,0 +1,66 @@
+<!-- Block: Contact -->
+{% if data.address or data.phone or data.email %}
+{% set direccion = data.address %}
+<!-- {% set direccion_to_map = direccion|url_encode %} -->
+{% set direccion_to_map = 'https://www.google.com/maps?q=!1m18!1m12!1m3!1d3762.8883959319195!2d-99.19362322421904!3d19.42688278180361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f854d6b5c7%3A0x9eae78d8c845625!2sAv.%20Ej%C3%A9rcito%20Nacional%20Mexicano%20373-piso%203%2C%20Chapultepec%20Morales%2C%20Granada%2C%2011520%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1690830682949!5m2!1ses!2sus' %}
+
+{% set call_cell = data.phone|replace({' ': ''}) %}
+{% set call_cell = call_cell|replace({'Ext.': ',,'}) %}
+{% set tel_link = 'tel:' ~ call_cell %}
+
+    <div id="contacts-block">
+
+        <h2 class="block-title">{{ 'Contact Us'|t }}</h2>
+
+        <div class="contact-items">
+            <img src="{{ file_url(data.logo) }}" alt="{{ 'Contact'|t }}">
+            <h4 class="contact-address">
+                <!-- <a href="https://www.google.com/maps?q={{ direccion_to_map }}"... -->
+                <a href="{{ direccion_to_map }}" 
+                    target="_blank">{{ data.address }}</a> </h4>
+            <h4 class="contact-phone"> {{ 'Phone:'|t }} <a href="{{ tel_link }}">{{ data.phone }}</a> </h4>
+            <h4 class="contact-email"> {{ 'Email:'|t }} <a href="mailto:{{ data.email }}">{{ data.email }}</a> </h4>
+
+            <ul class="social-icons">
+
+                {% if data.facebook %}
+                    <li><a href="{{ data.facebook }}" target="_blank"><i class="icon-facebook"></i></a></li>
+                {% endif %}	
+                
+                {% if data.twitter %}
+                    <li><a href="{{ data.twitter }}" target="_blank"><i class="icon-twitter"></i></a></li>
+                {% endif %}	
+
+                {% if data.instagram %}
+                    <li><a href="{{ data.instagram }}" target="_blank"><i class="icon-instagram"></i></a></li>
+                {% endif %}	
+
+                {% if data.linkedin %}
+                    <li><a href="{{ data.linkedin }}" target="_blank"><i class="icon-linkedin"></i></a></li>
+                {% endif %}	
+
+                {% if data.youtube %}
+                    <li><a href="{{ data.youtube }}" target="_blank"><i class="icon-youtube"></i></a></li>
+                {% endif %}	
+
+                {% if data.vimeo %}
+                    <li><a href="{{ data.vimeo }}" target="_blank"><i class="icon-vimeo"></i></a></li>
+                {% endif %}	
+
+                {% if data.telegram %}
+                    <li><a href="{{ data.telegram }}" target="_blank"><i class="icon-telegram"></i></a></li>
+                {% endif %}	
+
+                {% if data.whatsapp %}
+                    <li><a href="{{ data.whatsapp }}" target="_blank"><i class="icon-whatsapp"></i></a></li>
+                {% endif %}	
+
+            </ul>    
+
+        </div>
+
+        <a class="button" href="/Contacto">{{ 'Send message'|t  }}</a>
+
+    </div>
+
+{% endif %}	

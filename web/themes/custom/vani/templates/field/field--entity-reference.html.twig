@@ -1,0 +1,21 @@
+
+{#
+/**
+ * @file
+ * Theme override for  term fields.
+ */
+#}
+
+<div class="node-taxonomy-container">
+
+  {% if not label_hidden %}
+    <h3{{ title_attributes.addClass('term-title') }}><i class="icon-hashtag theme-color"></i> {{ label }}</h3>
+  {% endif %}
+  
+  <ul class="taxonomy-terms">
+    {% for item in items %}
+      <li{{ item.attributes.addClass('taxonomy-term') }}>{{ item.content }}</li>
+    {% endfor %}
+  </ul>
+  
+</div> <!--/.node-taxonomy-container -->
